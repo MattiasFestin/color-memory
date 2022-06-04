@@ -1,0 +1,52 @@
+{
+	"name": "color_memory",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "svelte-kit dev",
+		"devHost": "svelte-kit dev --host",
+		"build": "svelte-kit build",
+		"package": "svelte-kit package",
+		"preview": "svelte-kit preview",
+		"prepare": "svelte-kit sync",
+		"check": "svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check --plugin-search-dir=. . && eslint .",
+		"format": "prettier --write --plugin-search-dir=. .",
+		"test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit --coverage --verbose",
+		"watch-test": "npm run test -- --watchAll"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "next",
+		"@testing-library/dom": "^8.13.0",
+		"@testing-library/jest-dom": "^5.16.4",
+		"@testing-library/svelte": "^3.1.1",
+		"@testing-library/user-event": "^14.2.0",
+		"@types/howler": "^2.2.7",
+		"@types/jest": "^27.0.6",
+		"@types/lodash": "^4.14.182",
+		"@typescript-eslint/eslint-plugin": "^5.10.1",
+		"@typescript-eslint/parser": "^5.10.1",
+		"eslint": "^8.12.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"howler": "^2.2.3",
+		"jest": "^27.5.1",
+		"lodash": "^4.17.21",
+		"prettier": "^2.5.1",
+		"prettier-plugin-svelte": "^2.5.0",
+		"sass": "^1.52.1",
+		"svelte": "^3.44.0",
+		"svelte-check": "^2.2.6",
+		"svelte-jester": "^2.3.2",
+		"svelte-preprocess": "^4.10.1",
+		"ts-jest": "^27.0.3",
+		"tsc-esm-fix": "^2.15.0",
+		"tslib": "^2.3.1",
+		"typescript": "~4.6.2"
+	},
+	"type": "module",
+	"engines": {
+		"node": ">= 14.16.1"
+	}
+}

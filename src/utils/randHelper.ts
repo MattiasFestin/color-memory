@@ -69,5 +69,9 @@ export const squirrle3_i31 = (position: number, seed: number): number => {
  * @returns number, float between 0 and 1;
  */
 export const squirrle3_f32_scaled = (position: number, seed: number): number => {
-	return squirrle3_i31(position, seed) / (2**31-1); //Max storleken
+	//Max size of integers that squirrle3 implementation can handle
+	const MAX_SIZE = 2 ** 31 - 1;
+
+	//Scale the integer as a float between 0 and 1
+	return squirrle3_i31(position, seed) / MAX_SIZE;
 }

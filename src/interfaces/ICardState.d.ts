@@ -1,4 +1,4 @@
 export interface ICardState {
-    card: Card;
-    state: CardStateEnum;
+	card: Card;
+	state: CardStateEnum;
 }

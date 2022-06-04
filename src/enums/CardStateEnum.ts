@@ -1,8 +1,8 @@
 export enum CardStateEnum {
-    Default,
-    Selected,
-    Correct,
-    Locked,
-    Hidden,
-    Removed
+	Default,
+	Selected,
+	Correct,
+	Locked,
+	Hidden,
+	Removed
 }

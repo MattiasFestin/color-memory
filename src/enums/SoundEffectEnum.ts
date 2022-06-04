@@ -1,5 +1,5 @@
 export enum SoundEffectEnum {
-    Sucess,
-    Failure,
-    Win
+	Sucess,
+	Failure,
+	Win
 }
